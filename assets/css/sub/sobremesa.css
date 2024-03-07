@@ -1,0 +1,300 @@
+@keyframes risco {
+  0%, 100% {
+    border: 1px solid green;
+  }
+  25% {
+    border: 1px solid pink;
+  }
+  50% {
+    border: 1px solid blue;
+  }
+  75% {
+    border: 1px solid orange;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: 1s ease-in-out;
+  background-color: #e9e0ec;
+}
+body p, body h1, body h2, body h3 {
+  transition: color 1s ease;
+}
+body header .links a {
+  transition: color 1s ease;
+}
+
+.modo-dark {
+  background-color: #272023;
+  color: white;
+}
+.modo-dark header .links a {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  width: 80%;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+header .icon {
+  width: 7%;
+  border-radius: 5px;
+}
+header .links {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+header .links a:hover {
+  text-decoration: underline;
+}
+header .lua-dark {
+  margin: auto;
+  width: 6%;
+  height: 50px;
+  border-radius: 50%;
+}
+header .lua-dark:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 150px;
+  width: 100%;
+}
+footer h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer #contato {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer #contato .telefone {
+  margin-right: 3px;
+  width: 2%;
+}
+
+.risco {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  animation-name: risco;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+}
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+main .sobremesas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  height: 80%;
+  border: 1px solid black;
+}
+main .sobremesas .bolo {
+  width: 100%;
+  height: 33%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+main .sobremesas .bolo img {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+main .sobremesas .bolo h2 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+main .sobremesas .bolo p {
+  text-align: center;
+}
+main .sobremesas .brigadeiro {
+  width: 100%;
+  height: 33%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+main .sobremesas .brigadeiro img {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+main .sobremesas .brigadeiro h2 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+main .sobremesas .brigadeiro p {
+  text-align: center;
+}
+main .sobremesas .pudim {
+  width: 100%;
+  height: 34%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+main .sobremesas .pudim img {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+main .sobremesas .pudim h2 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+main .sobremesas .pudim p {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  header .icon {
+    width: 30px;
+    height: 50px;
+  }
+  header .lua-dark {
+    width: 30px;
+    height: 50px;
+  }
+  main h1 {
+    margin-top: 30px;
+  }
+  main .sobremesas {
+    width: 100%;
+    border: none;
+  }
+  main .sobremesas .bolo {
+    width: 60%;
+    height: 150px;
+  }
+  main .sobremesas .brigadeiro {
+    width: 60%;
+    height: 150px;
+  }
+  main .sobremesas .pudim {
+    width: 60%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  header .icon {
+    width: 30px;
+    height: 50px;
+  }
+  header .lua-dark {
+    width: 30px;
+    height: 50px;
+  }
+  main h1 {
+    margin-top: 30px;
+  }
+  main .sobremesas {
+    width: 100%;
+    border: none;
+  }
+  main .sobremesas .bolo {
+    width: 80%;
+    height: 150px;
+  }
+  main .sobremesas .brigadeiro {
+    width: 80%;
+    height: 150px;
+  }
+  main .sobremesas .pudim {
+    width: 80%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 150px) and (max-width: 300px) {
+  header .icon {
+    width: 10px;
+    height: 20px;
+  }
+  header .lua-dark {
+    width: 10px;
+    height: 20px;
+  }
+  header .links a {
+    font-size: 11px;
+  }
+  main h1 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  main .sobremesas {
+    width: 100%;
+    border: none;
+  }
+  main .sobremesas .bolo {
+    width: 90%;
+    height: 100px;
+  }
+  main .sobremesas .bolo h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  main .sobremesas .bolo p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  main .sobremesas .brigadeiro {
+    width: 90%;
+    height: 100px;
+  }
+  main .sobremesas .brigadeiro h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  main .sobremesas .brigadeiro p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  main .sobremesas .pudim {
+    width: 90%;
+    height: 100px;
+  }
+  main .sobremesas .pudim h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  main .sobremesas .pudim p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=sobremesa.css.map */
